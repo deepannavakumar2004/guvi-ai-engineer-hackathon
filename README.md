@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SME Financial Health Assessment Platform
 
 ## 🚀 Overview
@@ -37,3 +38,6 @@ SMEs often lack access to affordable financial advisory tools and struggle to in
 
 ## 🏗️ System Architecture
 
+=======
+# guvi-ai-engineer-hackathon
+>>>>>>> 1e3f8d9a1718b39e71767f839b985aea7d1718ca
