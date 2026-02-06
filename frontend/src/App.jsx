@@ -15,7 +15,7 @@ function App() {
   const [showSubscribe, setShowSubscribe] = useState(false);
   
   const handleSubscribe = async (creditsToAdd) => {
-  const res = await fetch("http://127.0.0.1:8000/subscribe", {
+  const res = await fetch("https://guvi-ai-engineer-hackathon.onrender.com/subscribe", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -48,7 +48,7 @@ function App() {
       return;
     }
 
-    const res = await fetch("http://127.0.0.1:8000/register", {
+    const res = await fetch("https://guvi-ai-engineer-hackathon.onrender.com/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -69,7 +69,7 @@ function App() {
 
   // ---------------- LOGIN ----------------
   const handleLogin = async () => {
-    const res = await fetch("http://127.0.0.1:8000/login", {
+    const res = await fetch("https://guvi-ai-engineer-hackathon.onrender.com/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password }),
@@ -105,7 +105,7 @@ function App() {
     formData.append("file", file);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/analyze", {
+      const response = await fetch("https://guvi-ai-engineer-hackathon.onrender.com/analyze", {
         method: "POST",
         body: formData,
       });
