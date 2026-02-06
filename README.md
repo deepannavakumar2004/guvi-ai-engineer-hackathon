@@ -37,7 +37,64 @@ SMEs often lack access to affordable financial advisory tools and struggle to in
 ---
 
 ## 🏗️ System Architecture
+Frontend (React.js)
+|
+| REST API
+|
+Backend (FastAPI + Python)
+|
+|
+Data Processing (pandas)
 
-=======
-# guvi-ai-engineer-hackathon
->>>>>>> 1e3f8d9a1718b39e71767f839b985aea7d1718ca
+---
+
+## 🛠️ Tech Stack
+### Frontend
+- React.js
+- CSS (Responsive, Dark Theme)
+
+### Backend
+- FastAPI
+- Python
+- pandas
+
+### Deployment
+- Frontend: Netlify
+- Backend: Render
+
+---
+
+## 🔐 SaaS Credit Model
+- New users receive **5 free credits**
+- Each financial analysis consumes **1 credit**
+- When credits are exhausted, users are redirected to a **subscription page**
+- Subscription plans add more credits (mock implementation)
+
+---
+
+## 📁 Project Structure
+
+
+guvi-hackathon/
+│
+├── backend/
+│ ├── main.py
+│ └── requirements.txt
+│
+├── frontend/
+│ ├── src/
+│ ├── public/
+│ └── package.json
+│
+├── sample_data.csv
+└── README.md
+
+---
+
+## ▶️ How to Run Locally
+
+### Backend
+```bash
+cd backend
+uvicorn main:app --reload
+
